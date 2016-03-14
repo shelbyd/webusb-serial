@@ -1,0 +1,14 @@
+{
+  "name": "webusb-serial-examples",
+  "version": "0.1.0",
+  "description": "example of using webusb-serial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Montes",
+  "license": "MIT",
+  "dependencies": {
+    "firmata": "^0.10.0"
+  }
+}
