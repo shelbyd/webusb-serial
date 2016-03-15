@@ -11,7 +11,7 @@ var DEFAULT_FILTERS = [
 function WebUSBSerialPort(options) {
   var self = this;
 
-  self.options = options || {};
+  options = options || {};
   self.filters = options.filters || DEFAULT_FILTERS;
 
   navigator.usb.requestDevice({filters: self.filters })

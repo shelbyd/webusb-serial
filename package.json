@@ -1,6 +1,6 @@
 {
   "name": "webusb-serial",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Virtual serial device using WebUSB as the transport",
   "main": "index.js",
   "repository": "git@github.com:monteslu/webusb-serial.git",
