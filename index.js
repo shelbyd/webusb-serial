@@ -97,7 +97,7 @@ WebUSBSerialPort.prototype.close = function (callback) {
               'value': 0x00,
               'index': 0x02})
     .then(function(){
-      self.device_.close();
+      self.device.close();
       if(callback){
         callback();
       }
