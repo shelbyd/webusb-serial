@@ -10,7 +10,6 @@ Use webusb to send/receive data to a USB connected physical device:
 
 ```js
 var webusbSerialPort = require('webusb-serial').SerialPort;
-var webusb = require('webusb');
 var firmata = require('firmata');
 
 
