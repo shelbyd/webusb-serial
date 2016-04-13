@@ -17,6 +17,14 @@ From there you'll need to create a johnny-five node and create a new nodebot of 
 
 Inside your nodebot function you have full access to the [johnny-five](http://johnny-five.org/api/) API!
 
+The code in your johnny-five node is what executes when the board is ready.  You can try something as simple as:
+
+```javascript
+var led = new five.Led(9);
+
+led.blink(500);
+```
+
 ## Gotchas
 
 You might have to restart your arduino in order for your pagenodes to reconnect to the device.
