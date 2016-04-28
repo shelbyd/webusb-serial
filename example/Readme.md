@@ -9,7 +9,7 @@ First setup the [WebUSB arduino library](https://github.com/webusb/arduino) acco
 
 Instead of using their rgb example sketch use [sketch/StandardFirmataWebUSB.ino](./sketch/StandardFirmataWebUSB.ino) from this repository.
 
-Next, you can either run pagenodes locally from the instructions in the [pagenodes repository](https://github.com/monteslu/pagenodes) or simply go to (https://PageNodes.com)(https://pagenodes.com).
+Next, you can either run pagenodes locally from the instructions in the [pagenodes repository](https://github.com/monteslu/pagenodes) or simply go to [https://PageNodes.com](https://pagenodes.com).
 
 From there you'll need to create a johnny-five node and create a new nodebot of type `firmata` and tranasport of `webusb`.  You'll also need to authorize the Arduino by clicking the `Authorize USB` button.
 
