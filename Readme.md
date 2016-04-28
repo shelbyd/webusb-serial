@@ -16,8 +16,9 @@ var firmata = require('firmata');
 //create the webusb serialport and optionally specify a USB filter
 var serialPort = new webusbSerialPort({
   filters: [
-    { 'vendorId': 0x2341, 'productId': 0x8036 },
-    { 'vendorId': 0x2341, 'productId': 0x8037 }
+    { 'vendorId': 0x2341, 'productId': 0x8036 }, // Arduino Leonardo
+    { 'vendorId': 0x2341, 'productId': 0x8037 }, // Arduino Micro
+    { 'vendorId': 0x239a, 'productId': 0x8011 } // Adafruit Circuit Playground
   ]
 });
 
