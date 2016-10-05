@@ -87,7 +87,17 @@ WebUSBSerialPort.prototype.open = function (callback) {
 
 WebUSBSerialPort.prototype.write = function (data, callback) {
   console.log('send', data);
-  return this.device.transferOut(4, data);
+  this.device.transferOut(4, data)
+  .then(function(){
+    if(callback){
+      callback(null);
+    }
+  })
+  .catch(function(error){
+    if(callback){
+      callback(error);
+    }
+  });
 
 };
 
