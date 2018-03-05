@@ -29,14 +29,7 @@
 
 #include <WebUSB.h>
 
-const WebUSBURL URLS[] = {
-  { 1, "pagenodes.com" },
-  { 0, "localhost:1337" },
-};
-
-const uint8_t ALLOWED_ORIGINS[] = { 1, 2 };
-
-WebUSB WebUSBSerial(URLS, 2, 1, ALLOWED_ORIGINS, 2);
+WebUSB WebUSBSerial(1, "pagenodes.com");
 
 #define SerialW WebUSBSerial
 
@@ -786,4 +779,6 @@ void loop()
       }
     }
   }
+  
+  SerialW.flush();
 }
